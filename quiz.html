@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Knowledge Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Website Header and Navigation Menu -->
+    <header>
+        <h1>HTML Knowledge Quiz</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="html-css.html">HTML &amp; CSS</a>
+            <a href="concepts.html">Concepts</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="references.html">References</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <!-- Main Quiz Content -->
+    <main>
+
+        <!-- Quiz Introduction -->
+        <section>
+            <h2>Test Your Knowledge</h2>
+
+            <p>
+                Complete the quiz below to test your understanding of HTML, CSS,
+                JavaScript, and web development concepts.
+            </p>
+
+            <p>
+                The quiz contains five questions. Read each question carefully
+                before submitting your answers.
+            </p>
+        </section>
+
+        <!-- Quiz Form -->
+        <section>
+            <form id="quizForm">
+
+                <!-- Question 1: Fill in the Blank -->
+                <div class="question" id="question1">
+                    <h3>1. Fill in the Blank</h3>
+
+                    <label for="answer1">
+                        HTML stands for HyperText ______ Language.
+                    </label>
+
+                    <input type="text" id="answer1" name="answer1">
+
+                    <p class="feedback" id="feedback1"></p>
+                </div>
+
+                <!-- Question 2: Multiple Choice -->
+                <div class="question" id="question2">
+                    <h3>2. Multiple Choice</h3>
+
+                    <p>Which language controls the appearance of a webpage?</p>
+
+                    <label>
+                        <input type="radio" name="answer2" value="HTML">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="radio" name="answer2" value="CSS">
+                        CSS
+                    </label>
+
+                    <label>
+                        <input type="radio" name="answer2" value="JavaScript">
+                        JavaScript
+                    </label>
+
+                    <label>
+                        <input type="radio" name="answer2" value="HTTP">
+                        HTTP
+                    </label>
+
+                    <p class="feedback" id="feedback2"></p>
+                </div>
+
+                <!-- Question 3: Multiple Choice -->
+                <div class="question" id="question3">
+                    <h3>3. Multiple Choice</h3>
+
+                    <p>Who created HTML and proposed the World Wide Web?</p>
+
+                    <label>
+                        <input type="radio" name="answer3" value="Bill Gates">
+                        Bill Gates
+                    </label>
+
+                    <label>
+                        <input type="radio" name="answer3" value="Steve Jobs">
+                        Steve Jobs
+                    </label>
+
+                    <label>
+                        <input type="radio" name="answer3" value="Tim Berners-Lee">
+                        Tim Berners-Lee
+                    </label>
+
+                    <label>
+                        <input type="radio" name="answer3" value="Mark Zuckerberg">
+                        Mark Zuckerberg
+                    </label>
+
+                    <p class="feedback" id="feedback3"></p>
+                </div>
+
+                <!-- Question 4: Multiple Choice -->
+                <div class="question" id="question4">
+                    <h3>4. Multiple Choice</h3>
+
+                    <p>Which technology adds interaction and functionality to a webpage?</p>
+
+                    <label>
+                        <input type="radio" name="answer4" value="CSS">
+                        CSS
+                    </label>
+
+                    <label>
+                        <input type="radio" name="answer4" value="JavaScript">
+                        JavaScript
+                    </label>
+
+                    <label>
+                        <input type="radio" name="answer4" value="HTML">
+                        HTML
+                    </label>
+
+                    <label>
+                        <input type="radio" name="answer4" value="URL">
+                        URL
+                    </label>
+
+                    <p class="feedback" id="feedback4"></p>
+                </div>
+
+                <!-- Question 5: Multi-Select -->
+                <div class="question" id="question5">
+                    <h3>5. Select All That Apply</h3>
+
+                    <p>Which of the following are semantic HTML elements?</p>
+
+                    <label>
+                        <input type="checkbox" name="answer5" value="header">
+                        &lt;header&gt;
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="answer5" value="nav">
+                        &lt;nav&gt;
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="answer5" value="section">
+                        &lt;section&gt;
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="answer5" value="div">
+                        &lt;div&gt;
+                    </label>
+
+                    <p class="feedback" id="feedback5"></p>
+                </div>
+
+                <!-- Quiz Buttons -->
+                <div class="quiz-buttons">
+                    <button type="button" id="gradeButton">Grade Quiz</button>
+                    <button type="reset" id="resetButton">Reset Quiz</button>
+                </div>
+
+            </form>
+        </section>
+
+        <!-- Final Quiz Result -->
+        <section id="quizResult">
+            <h2>Quiz Result</h2>
+
+            <p id="scoreResult">
+                Your score will appear here after you submit the quiz.
+            </p>
+
+            <p id="passFailResult"></p>
+        </section>
+
+    </main>
+
+    <!-- Website Footer -->
+    <footer>
+        <p>Jordan Allen | IT 3203 | Summer 2026</p>
+
+        <p>
+            This website was created as a class project for IT 3203 - Intro to Web Development.
+        </p>
+
+        <p>
+            Course Website:
+            <a href="https://ksuweb.github.io/IT3203/" target="_blank">
+                https://ksuweb.github.io/IT3203/
+            </a>
+        </p>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

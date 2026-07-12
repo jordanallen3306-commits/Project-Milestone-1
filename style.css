@@ -1,0 +1,300 @@
+/* General Page Styling */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+
+    /* Keeps the footer at the bottom of short pages */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #003366;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Navigation Menu Styling */
+nav {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav a:hover {
+    color: gold;
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+
+    /* Pushes the footer to the bottom */
+    flex: 1;
+}
+
+/* Section Styling */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading Styling */
+h1,
+h2 {
+    color: #003366;
+}
+
+header h1 {
+    color: white;
+}
+
+/* Paragraph and List Styling */
+p,
+li {
+    line-height: 1.6;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #003366;
+    color: white;
+}
+
+/* Image Styling */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Makes the homepage HTML logo smaller */
+main img {
+    width: 300px;
+    max-width: 80%;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: gold;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Code Element Styling */
+code {
+    background-color: #eeeeee;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+/* Mobile Device Styling */
+@media screen and (max-width: 700px) {
+    main {
+        width: 90%;
+        padding: 15px;
+    }
+
+    header {
+        padding: 20px 10px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    main img {
+        width: 220px;
+    }
+}
+/* Quiz Question Styling */
+.question {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.question h3 {
+    color: #003366;
+    margin-top: 0;
+}
+
+.question label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Text Input Styling */
+.question input[type="text"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #999999;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Radio Button and Checkbox Spacing */
+.question input[type="radio"],
+.question input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+/* Quiz Button Area */
+.quiz-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+/* Quiz Button Styling */
+.quiz-buttons button {
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.quiz-buttons button:hover {
+    background-color: #0055a5;
+}
+
+/* Give the Reset button a different appearance */
+#resetButton {
+    background-color: #666666;
+}
+
+#resetButton:hover {
+    background-color: #444444;
+}
+
+/* Question Feedback Styling */
+.feedback {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+/* Correct Answer Styling */
+.correct {
+    color: #1c6b2a;
+}
+
+.correct-answer {
+    border-color: #2e8b57;
+    background-color: #eaf7ee;
+}
+
+/* Incorrect Answer Styling */
+.incorrect {
+    color: #b22222;
+}
+
+.incorrect-answer {
+    border-color: #b22222;
+    background-color: #fdecec;
+}
+
+/* Final Quiz Result Styling */
+#quizResult {
+    text-align: center;
+}
+
+#scoreResult {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Quiz Styling for Smaller Screens */
+@media screen and (max-width: 700px) {
+    .quiz-buttons {
+        flex-direction: column;
+    }
+
+    .quiz-buttons button {
+        width: 100%;
+    }
+}
+/* History Page Image */
+.history-image {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+}
